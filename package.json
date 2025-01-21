@@ -1,5 +1,5 @@
 {
-  "name": "node-mongo",
+  "name": "node-mongo-api",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
