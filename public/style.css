@@ -1,0 +1,12 @@
+body {
+    font-size: 1.25rem;
+}
+
+.http-verb {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+
+.endpoint {
+    color: darkcyan;
+}
