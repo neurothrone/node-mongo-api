@@ -1,0 +1,22 @@
+### GET request index
+GET http://localhost:3000/
+
+### POST request to create a new blog post
+POST http://localhost:3000/blogs
+Content-Type: application/json
+
+{
+  "title": "My first blog post",
+  "content": "Hello world!"
+}
+
+### POST request to create a new product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Zeta Force Energy Booster",
+  "quantity": 5,
+  "price": 9.99,
+  "image": "https://picsum.photos/200"
+}
