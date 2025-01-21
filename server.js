@@ -20,7 +20,8 @@ const Product = require("./models/product");
 app.get(
   "/",
   (req, res) => {
-    res.sendFile(__dirname + "/public/index.html");
+    // res.sendFile(__dirname + "/public/index.html");
+    res.send("Welcome to Zeta Force API");
   }
 );
 
