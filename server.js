@@ -4,26 +4,11 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const cors = require("cors");
-
-app.use(cors());
-// app.use(express.static("public"));
+app.use(express.static("public"));
 app.use(express.json());
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send("Unexpected error occurred.");
-});
 
 const mongoose = require("mongoose");
 const Product = require("./models/product");
-
-app.get(
-  "/",
-  (req, res) => {
-    // res.sendFile(__dirname + "/public/index.html");
-    res.send("Welcome to Zeta Force API");
-  }
-);
 
 app.post(
   "/blogs",
